@@ -1,86 +1,161 @@
-<!DOCTYPE html>
-<html lang="id">
+<!doctype html>
+<html lang="en" data-theme="light">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0b1020">
-  <meta name="description" content="Portofolio Deka — pelajar, technology enthusiast, dan aspiring builder.">
-  <title>Deka — Personal Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eff5ff">
+  <meta name="description" content="Deka Messi Araya — student researcher, AI and informatics enthusiast, and youth innovation builder from Jombang, Indonesia.">
+  <meta property="og:title" content="Deka Messi Araya — Portfolio">
+  <meta property="og:description" content="Research, AI, leadership, and ideas built for real-world impact.">
+  <meta property="og:type" content="website">
+  <title>Deka Messi Araya — Research, AI & Innovation</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
-  <header class="topbar glass">
-    <a class="brand" href="#home" aria-label="Deka home"><span class="brand-mark">d.</span><span>deka<span class="brand-dot">.</span></span></a>
-    <nav aria-label="Navigasi utama">
-      <a href="#about">Tentang</a><a href="#highlights">Prestasi</a><a href="#connect">Kontak</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="ambient ambient--blue" aria-hidden="true"></div>
+  <div class="ambient ambient--lilac" aria-hidden="true"></div>
+  <div class="ambient ambient--mint" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="pointer-glow" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Deka Messi Araya home">
+      <span class="brand-mark">d<span>.</span></span>
+      <span class="brand-name">DEKA MESSI ARAYA<small>PERSONAL PORTFOLIO</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#work">Selected work</a>
+      <a class="nav-link" href="#achievements">Achievements</a>
+      <a class="nav-link" href="#journey">Journey</a>
     </nav>
-    <a class="top-cta" href="#connect">Let's connect <span>↗</span></a>
+    <div class="header-actions">
+      <button class="icon-button theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" title="Switch appearance">
+        <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.7 15.3A8.7 8.7 0 0 1 8.7 3.3 8.9 8.9 0 1 0 20.7 15.3Z"></path></svg>
+      </button>
+      <a class="button button--nav" href="https://id.linkedin.com/in/deka-messi-araya-a6554b2b0" target="_blank" rel="noopener noreferrer">Let’s connect <span aria-hidden="true">↗</span></a>
+      <button id="menuToggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu"><span></span><span></span></button>
+    </div>
+    <nav id="mobileNav" class="mobile-nav glass-panel" aria-label="Mobile navigation" hidden>
+      <a href="#home">Home <span>01</span></a><a href="#about">About <span>02</span></a><a href="#work">Selected work <span>03</span></a><a href="#achievements">Achievements <span>04</span></a><a href="#journey">Journey <span>05</span></a>
+      <a class="mobile-linkedin" href="https://id.linkedin.com/in/deka-messi-araya-a6554b2b0" target="_blank" rel="noopener noreferrer">LinkedIn profile ↗</a>
+    </nav>
   </header>
 
-  <main id="home">
-    <section class="hero">
+  <main id="main">
+    <section id="home" class="hero section-shell">
       <div class="hero-copy">
-        <div class="availability"><span class="pulse"></span> OPEN TO LEARN & COLLABORATE</div>
-        <p class="eyebrow">HALO, AKU DEKA 👋</p>
-        <h1>Membangun ide.<br><span>Menciptakan dampak.</span></h1>
-        <p class="hero-description">Siswa SMA yang tertarik pada teknologi, kecerdasan buatan, riset, dan desain. Aku suka mengubah rasa penasaran menjadi ide dan proyek nyata.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#highlights">Jelajahi profil <span>↓</span></a>
-          <a class="button button-ghost" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+        <div class="eyebrow reveal"><span class="status-dot"></span> STUDENT RESEARCHER <span class="eyebrow-slash">/</span> INDONESIA</div>
+        <h1 class="hero-title reveal">Curious by nature.<br><span class="gradient-text">Driven to make</span><br>an impact<span class="title-period">.</span></h1>
+        <p class="hero-subtitle reveal">I’m Deka Messi Araya — a student researcher and AI & informatics enthusiast exploring how research, technology, and thoughtful design can solve real-world problems.</p>
+        <div class="hero-actions reveal">
+          <a class="button button--primary" href="#work">Explore my work <span aria-hidden="true">↘</span></a>
+          <a class="button button--glass" href="https://id.linkedin.com/in/deka-messi-araya-a6554b2b0" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5V19M5 5.1v.1M10 19v-6.1a3.1 3.1 0 0 1 6.2 0V19M10 10v9M3 3h18v18H3z"></path></svg> LinkedIn profile <span aria-hidden="true">↗</span></a>
         </div>
-        <div class="mini-proof"><div class="proof-icon">✦</div><p><strong>Curious by nature.</strong><br><span>Building, learning, improving — one step at a time.</span></p></div>
+        <div class="hero-footnote reveal"><span class="mini-avatar">DM</span><span>Based in <strong>Jombang, East Java</strong></span><span class="footnote-separator"></span><span>Building for a better tomorrow</span></div>
       </div>
-      <div class="hero-visual">
-        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
-        <div class="profile-card glass">
-          <div class="card-top"><span class="tiny-label">PERSONAL PROFILE</span><span class="more">•••</span></div>
-          <div class="avatar-wrap"><img src="profile.png" alt="Foto profil Deka" class="avatar"><span class="avatar-status"></span></div>
-          <h2>Deka Messi Araya</h2>
-          <p class="role">Student · Tech Enthusiast</p>
-          <div class="card-divider"></div>
-          <div class="interest-row"><span>⌘</span> Technology & AI</div>
-          <div class="interest-row"><span>✳</span> Research & Innovation</div>
-          <div class="interest-row"><span>◈</span> Design & Creativity</div>
-          <div class="card-footer"><span>INDONESIA</span><span class="sparkle">✦</span></div>
+
+      <div class="hero-visual reveal" aria-label="Profile card">
+        <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
+        <div class="floating-chip chip-top"><span class="chip-icon chip-icon--violet">✳</span><span><small>EXPLORING</small><strong>AI & Research</strong></span></div>
+        <article class="profile-glass glass-panel">
+          <div class="profile-topline"><span class="window-dots"><i></i><i></i><i></i></span><span class="mono-label">PROFILE / 001</span><span class="profile-menu-dots">•••</span></div>
+          <div class="portrait-frame"><div class="portrait-halo"></div><img src="profile.png" alt="Portrait of Deka Messi Araya" class="portrait"><span class="portrait-badge"><span></span> Open to ideas</span></div>
+          <div class="profile-info"><div><h2>Deka Messi Araya</h2><p>Student Researcher · AI Enthusiast</p></div><a class="round-arrow" href="https://id.linkedin.com/in/deka-messi-araya-a6554b2b0" target="_blank" rel="noopener noreferrer" aria-label="Open Deka's LinkedIn profile">↗</a></div>
+          <div class="profile-divider"></div>
+          <div class="profile-tags"><span>Artificial Intelligence</span><span>Scientific Research</span><span>Social Impact</span></div>
+          <div class="profile-bottom"><span><span class="tiny-pulse"></span> Always learning</span><span class="mono-label">ID · JATIM</span></div>
+        </article>
+        <div class="floating-chip chip-bottom"><span class="chip-icon chip-icon--mint">↗</span><span><small>FOCUS</small><strong>Ideas into impact</strong></span></div>
+        <div class="sparkle sparkle-a">✳</div><div class="sparkle sparkle-b">✧</div>
+      </div>
+      <a class="scroll-cue" href="#about"><span class="scroll-line"></span><span>SCROLL TO EXPLORE</span><span class="scroll-chevron">↓</span></a>
+    </section>
+
+    <section class="signal-strip section-shell reveal" aria-label="Areas of interest">
+      <span class="signal-label">MY CURIOSITY SPANS</span><div class="signal-items"><span>✳ Artificial Intelligence</span><span>⌁ Scientific Research</span><span>◈ Education</span><span>⤴ Sustainability</span><span>✦ Product Design</span></div>
+    </section>
+
+    <section id="about" class="section section-shell">
+      <div class="section-heading reveal"><div><div class="eyebrow"><span class="section-index">01</span> THE PERSON BEHIND THE WORK</div><h2>Technology is exciting.<br><span class="muted-title">Purpose makes it matter.</span></h2></div><p class="section-intro">I believe the best innovations start with listening, asking better questions, and understanding the people behind a problem.</p></div>
+      <div class="about-grid">
+        <article class="about-main glass-panel reveal"><div class="card-kicker"><span class="kicker-symbol">✳</span> A LITTLE ABOUT ME</div><p class="about-statement">I’m a high school student from Indonesia with a deep interest in <span>Artificial Intelligence, research, and technology-driven innovation.</span></p><p class="body-copy">My work and learning journey span environmental sustainability, education, agriculture, and public-service challenges. From scientific writing to building youth-led learning initiatives, I’m interested in turning complex questions into ideas that are useful, accessible, and grounded in real needs.</p><p class="body-copy">I’m continuously learning about machine learning, computer vision, software development, and how to lead teams that build together.</p><a class="text-link" href="https://id.linkedin.com/in/deka-messi-araya-a6554b2b0" target="_blank" rel="noopener noreferrer">More on LinkedIn <span>↗</span></a><div class="about-card-orb" aria-hidden="true"></div></article>
+        <div class="about-side">
+          <article class="value-card glass-panel reveal"><div class="value-icon icon-blue">⌕</div><h3>Research first</h3><p>Start with evidence, sharpen the question, and let curiosity guide the process.</p><span class="card-number">01 / 03</span></article>
+          <article class="value-card glass-panel reveal"><div class="value-icon icon-violet">✧</div><h3>Build with purpose</h3><p>Use technology to create solutions that are practical, inclusive, and meaningful.</p><span class="card-number">02 / 03</span></article>
+          <article class="value-card glass-panel reveal"><div class="value-icon icon-mint">↗</div><h3>Grow together</h3><p>Share knowledge, open doors for other students, and learn through collaboration.</p><span class="card-number">03 / 03</span></article>
         </div>
-        <div class="floating-chip chip-ai glass"><span class="chip-symbol">✳</span><div><b>AI & Innovation</b><small>Ideas into impact</small></div></div>
-        <div class="floating-chip chip-award glass"><span class="chip-symbol award-symbol">✦</span><div><b>Achievement</b><small>Keep moving forward</small></div></div>
       </div>
+      <div class="stats-row reveal"><div class="stat"><span class="stat-value">01</span><span class="stat-label">Research mindset</span></div><div class="stat"><span class="stat-value">∞</span><span class="stat-label">Questions to explore</span></div><div class="stat"><span class="stat-value">↗</span><span class="stat-label">Ideas into action</span></div><div class="stat stat-note"><span>Not just a list of wins.</span><strong>A work in progress — by design.</strong></div></div>
     </section>
 
-    <section class="stats glass" aria-label="Fokus utama">
-      <div><span class="stat-number">01</span><p>Curiosity</p><small>Selalu ingin tahu</small></div>
-      <div><span class="stat-number">02</span><p>Experiment</p><small>Berani mencoba</small></div>
-      <div><span class="stat-number">03</span><p>Impact</p><small>Belajar memberi dampak</small></div>
-    </section>
-
-    <section class="section about-section" id="about">
-      <div class="section-heading"><p class="eyebrow">01 / ABOUT ME</p><h2>Selalu ada hal baru<br>untuk <span>dibangun.</span></h2></div>
-      <div class="about-content"><p>Aku percaya ide bagus menjadi lebih berarti ketika diwujudkan. Saat ini aku mengeksplorasi pengembangan aplikasi, AI, riset, dan inovasi yang bisa membantu menyelesaikan masalah di sekitar kita.</p><p>Bagiku, proses belajar bukan sekadar mengumpulkan pengetahuan, tetapi juga berkolaborasi, bereksperimen, dan terus memperbaiki karya.</p>
-        <div class="skill-tags"><span>Artificial Intelligence</span><span>Web Development</span><span>Research</span><span>Product Thinking</span><span>Visual Design</span></div>
+    <section id="work" class="section section-shell work-section">
+      <div class="section-heading reveal"><div><div class="eyebrow"><span class="section-index">02</span> SELECTED WORK & INITIATIVES</div><h2>Curiosity, made <span class="gradient-text">tangible.</span></h2></div><p class="section-intro">A few directions I’m exploring through leadership, research, and early-stage product thinking.</p></div>
+      <div class="project-grid">
+        <article class="project-card project-card--large glass-panel reveal"><div class="project-art art-research"><div class="art-grid"></div><div class="art-orb art-orb-one"></div><div class="art-orb art-orb-two"></div><div class="art-label">LEARN <span>→</span> QUESTION <span>→</span> DISCOVER</div><div class="art-monogram">R<span>B</span>I</div><div class="art-caption">RESEARCH, MADE ACCESSIBLE</div></div><div class="project-content"><div class="project-meta"><span>01 / EDUCATION & RESEARCH</span><span class="status-pill"><i></i> Co-building</span></div><h3>Research Bridge Initiative</h3><p>A youth-led initiative working to make research education more accessible to Indonesian middle and high school students through peer-led mentoring, structured learning, and a community for curious minds.</p><div class="project-tags"><span>Research Mentorship</span><span>Curriculum Design</span><span>Youth Leadership</span></div><div class="project-bottom"><span class="project-role">Co-Founder & Director of Curriculum</span><a class="icon-link" href="https://id.linkedin.com/in/deka-messi-araya-a6554b2b0" target="_blank" rel="noopener noreferrer" aria-label="Learn more about Research Bridge Initiative via LinkedIn">↗</a></div></div></article>
+        <article class="project-card glass-panel reveal"><div class="project-art art-river"><div class="river-sun"></div><div class="river-line river-line-one"></div><div class="river-line river-line-two"></div><div class="river-line river-line-three"></div><div class="biofilter"><i></i><i></i><i></i><i></i><i></i><span>JOGOKALI</span></div><span class="art-caption">A CONCEPT FOR HEALTHIER RIVERS</span></div><div class="project-content"><div class="project-meta"><span>02 / ENVIRONMENT</span><span class="meta-year">2026</span></div><h3>JogoKali</h3><p>A modular floating biofilter concept for river restoration using phytoremediation and natural biofiltration, developed through research, prototype planning, and an interactive simulation.</p><div class="project-tags"><span>Sustainability</span><span>Biofiltration</span><span>Simulation</span></div><div class="project-bottom"><span class="project-role">Environmental innovation competition</span><a class="icon-link" href="https://id.linkedin.com/in/deka-messi-araya-a6554b2b0" target="_blank" rel="noopener noreferrer" aria-label="Read JogoKali story on LinkedIn">↗</a></div></div></article>
+        <article class="project-card glass-panel reveal"><div class="project-art art-ai"><div class="ai-ring ai-ring-one"></div><div class="ai-ring ai-ring-two"></div><div class="ai-core">AI<span>✦</span></div><div class="ai-node node-a">DATA</div><div class="ai-node node-b">PEOPLE</div><div class="ai-node node-c">IMPACT</div><span class="art-caption">TECHNOLOGY WITH HUMAN CONTEXT</span></div><div class="project-content"><div class="project-meta"><span>03 / AI & PRODUCT</span><span class="meta-year">IN DEVELOPMENT</span></div><h3>TemanUsaha AI</h3><p>An early-stage AI assistant concept for Indonesian small businesses, exploring how practical AI tools can help UMKM navigate everyday business challenges.</p><div class="project-tags"><span>AI Assistant</span><span>Web Development</span><span>UMKM</span></div><div class="project-bottom"><span class="project-role">Independent product exploration</span><span class="project-mark" aria-hidden="true">✳</span></div></div></article>
       </div>
+      <div class="work-note reveal"><span class="note-star">✦</span><p>These projects are at different stages of development. This portfolio describes the work and concepts as they are — with room to grow, test, and improve.</p></div>
     </section>
 
-    <section class="section achievements-section" id="highlights">
-      <div class="section-heading heading-row"><div><p class="eyebrow">02 / HIGHLIGHTS</p><h2>Progress worth<br><span>celebrating.</span></h2></div><p class="heading-note">Setiap pencapaian adalah pengingat untuk terus bertumbuh.</p></div>
-      <div class="achievement-grid">
-        <article class="achievement-card glass featured"><div class="achievement-top"><span class="achievement-icon">🏆</span><span class="achievement-label">ACHIEVEMENT</span></div><p class="achievement-kicker">Pencapaian kompetisi</p><h3>Juara 2</h3><p class="achievement-desc">Pengalaman meraih posisi juara dua — bukti bahwa proses, keberanian mencoba, dan konsistensi punya arti.</p><div class="achievement-bottom"><span>Competition · 2026</span><span>↗</span></div></article>
-        <article class="achievement-card glass"><div class="achievement-top"><span class="achievement-icon">✉</span><span class="achievement-label">WRITING</span></div><p class="achievement-kicker">International participation</p><h3>Writing & storytelling</h3><p class="achievement-desc">Mengembangkan ide dan menyampaikan cerita melalui tulisan yang personal dan bermakna.</p><div class="achievement-bottom"><span>Communication</span><span>↗</span></div></article>
-        <article class="achievement-card glass"><div class="achievement-top"><span class="achievement-icon">⌘</span><span class="achievement-label">BUILDING</span></div><p class="achievement-kicker">Personal project</p><h3>AI & technology</h3><p class="achievement-desc">Mengeksplorasi pengembangan solusi digital dan AI yang relevan dengan kebutuhan nyata.</p><div class="achievement-bottom"><span>Learning in public</span><span>↗</span></div></article>
+    <section id="achievements" class="section section-shell achievements-section">
+      <div class="section-heading reveal"><div><div class="eyebrow"><span class="section-index">03</span> MILESTONES & RECOGNITION</div><h2>Small steps. <span class="muted-title">Meaningful progress.</span></h2></div><p class="section-intro">Selected awards and recognitions from my learning journey, as listed on my LinkedIn profile.</p></div>
+      <div class="achievement-toolbar reveal"><div class="filter-tabs" role="group" aria-label="Filter achievements"><button class="filter-button active" data-filter="all" type="button" aria-pressed="true">All milestones <span>18</span></button><button class="filter-button" data-filter="research" type="button" aria-pressed="false">Research & writing</button><button class="filter-button" data-filter="innovation" type="button" aria-pressed="false">Innovation & ideas</button><button class="filter-button" data-filter="other" type="button" aria-pressed="false">Other recognition</button></div><span class="toolbar-note"><span class="tiny-pulse"></span> A selection, not the whole story</span></div>
+      <div class="achievement-grid" id="achievementGrid">
+        <article class="achievement-card glass-panel reveal" data-category="research"><div class="achievement-top"><span class="award-icon award-gold">✦</span><span class="achievement-date">NOV 2025</span></div><div class="award-rank rank-first">1<sup>ST</sup> PLACE</div><h3>Scientific Writing Competition</h3><p>Faculty of Science and Data Analytics, Institut Teknologi Sepuluh Nopember (ITS)</p><div class="achievement-foot"><span>Scientific research & writing</span><span>↗</span></div></article>
+        <article class="achievement-card glass-panel reveal" data-category="research"><div class="achievement-top"><span class="award-icon award-silver">✦</span><span class="achievement-date">FEB 2026</span></div><div class="award-rank rank-second">2<sup>ND</sup> PLACE</div><h3>LEVEL UP 6.0 National Essay Competition</h3><p>Pertamina University · Smart Science for a Circular Economy</p><div class="achievement-foot"><span>National essay</span><span>↗</span></div></article>
+        <article class="achievement-card glass-panel reveal" data-category="innovation"><div class="achievement-top"><span class="award-icon award-copper">✧</span><span class="achievement-date">JAN 2026</span></div><div class="award-rank rank-third">3<sup>RD</sup> PLACE</div><h3>AMI Innovation Challenge</h3><p>Institut Teknologi Bandung (ITB) · Team category</p><div class="achievement-foot"><span>Social & political innovation</span><span>↗</span></div></article>
+        <article class="achievement-card glass-panel reveal" data-category="other"><div class="achievement-top"><span class="award-icon award-copper">✧</span><span class="achievement-date">JAN 2026</span></div><div class="award-rank rank-third">3<sup>RD</sup> PLACE</div><h3>Jombang Pencak Silat Championship</h3><p>Government of Jombang Regency · Piala Bupati Jombang, Teen Male Class C</p><div class="achievement-foot"><span>Sports championship</span><span>↗</span></div></article>
+        <article class="achievement-card glass-panel reveal" data-category="research"><div class="achievement-top"><span class="award-icon award-blue">✧</span><span class="achievement-date">NOV 2025</span></div><div class="award-rank rank-special">CONTRIBUTOR</div><h3>“Our Kind of Future” Collective E-book</h3><p>United Nations Association Indonesia (UNAI) · Selected contributor to a collaborative e-book</p><div class="achievement-foot"><span>Youth perspectives</span><span>↗</span></div></article>
+        <article class="achievement-card glass-panel reveal" data-category="research"><div class="achievement-top"><span class="award-icon award-silver">✦</span><span class="achievement-date">NOV 2025</span></div><div class="award-rank rank-second">2<sup>ND</sup> PLACE</div><h3>KSM FEST National Essay Competition</h3><p>Universitas Indonesia · Investing in a Green Future</p><div class="achievement-foot"><span>Sustainability & essay</span><span>↗</span></div></article>
+        <article class="achievement-card glass-panel reveal" data-category="research"><div class="achievement-top"><span class="award-icon award-copper">✧</span><span class="achievement-date">JAN 2026</span></div><div class="award-rank rank-third">3<sup>RD</sup> PLACE</div><h3>InspiraThink Essay Competition</h3><p>Universitas Ciputra Surabaya · Innovation, entrepreneurship & Industry 5.0</p><div class="achievement-foot"><span>High school category</span><span>↗</span></div></article>
+        <article class="achievement-card glass-panel reveal" data-category="research"><div class="achievement-top"><span class="award-icon award-silver">✦</span><span class="achievement-date">OCT 2025</span></div><div class="award-rank rank-second">2<sup>ND</sup> PLACE</div><h3>International Scientific Writing Competition</h3><p>Accounting Student Association, Universitas Nahdlatul Ulama Surabaya (UNUSA)</p><div class="achievement-foot"><span>International writing</span><span>↗</span></div></article>
+        <article class="achievement-card glass-panel reveal" data-category="innovation"><div class="achievement-top"><span class="award-icon award-silver">✦</span><span class="achievement-date">AUG 2025</span></div><div class="award-rank rank-second">2<sup>ND</sup> PLACE</div><h3>EcoVisionary Competition</h3><p>Universitas Pertamina · UPSTRACT 7.0 renewable energy theme</p><div class="achievement-foot"><span>Environmental innovation</span><span>↗</span></div></article>
+        <article class="achievement-card glass-panel reveal" data-category="other"><div class="achievement-top"><span class="award-icon award-copper">✧</span><span class="achievement-date">SEP 2025</span></div><div class="award-rank rank-third">3<sup>RD</sup> PLACE</div><h3>National Pencak Silat Championship</h3><p>Ikatan Pencak Silat Indonesia (IPSI) · Teen Male Class C, Divif 2 Kostrad Singosari</p><div class="achievement-foot"><span>National sports</span><span>↗</span></div></article>
+        <article class="achievement-card glass-panel reveal" data-category="research"><div class="achievement-top"><span class="award-icon award-gold">✦</span><span class="achievement-date">JUL 2025</span></div><div class="award-rank rank-first">1<sup>ST</sup> PLACE</div><h3>Find Your Concentration Essay Competition</h3><p>President University Major Association (PUMA)</p><div class="achievement-foot"><span>National essay</span><span>↗</span></div></article>
+        <article class="achievement-card glass-panel reveal" data-category="other"><div class="achievement-top"><span class="award-icon award-blue">✳</span><span class="achievement-date">JUL 2025</span></div><div class="award-rank rank-special">75% MERIT SCHOLARSHIP</div><h3>President University</h3><p>Merit scholarship awarded through the “Find Your Concentration” program based on academic performance and competition achievement.</p><div class="achievement-foot"><span>Scholarship recognition</span><span>↗</span></div></article>
+        <article class="achievement-card glass-panel reveal" data-category="research"><div class="achievement-top"><span class="award-icon award-gold">✦</span><span class="achievement-date">MAR 2025</span></div><div class="award-rank rank-first">1<sup>ST</sup> PLACE</div><h3>ACTION 2025 Academic Research Competition</h3><p>MBI Amanatul Ummah Pacet · Students across Java and Bali</p><div class="achievement-foot"><span>Academic research</span><span>↗</span></div></article>
+        <article class="achievement-card glass-panel reveal" data-category="research"><div class="achievement-top"><span class="award-icon award-silver">✦</span><span class="achievement-date">MAR 2025</span></div><div class="award-rank rank-second">2<sup>ND</sup> PLACE</div><h3>National Poetry Writing Competition</h3><p>Bakrie University Press (BPress), Universitas Bakrie</p><div class="achievement-foot"><span>Creative writing</span><span>↗</span></div></article>
+        <article class="achievement-card glass-panel reveal" data-category="research"><div class="achievement-top"><span class="award-icon award-gold">✦</span><span class="achievement-date">JAN 2025</span></div><div class="award-rank rank-first">1<sup>ST</sup> PLACE</div><h3>National Short Story Writing Competition</h3><p>Inspiration Fest 2024 · PT Binarcita Cipta Pratama</p><div class="achievement-foot"><span>Creative writing</span><span>↗</span></div></article>
+        <article class="achievement-card glass-panel reveal" data-category="innovation"><div class="achievement-top"><span class="award-icon award-copper">✧</span><span class="achievement-date">AUG 2025</span></div><div class="award-rank rank-third">3<sup>RD</sup> PLACE</div><h3>National Creative Writing Competition</h3><p>PT Nusantara Global Inovasi · Inclusive land transportation concept</p><div class="achievement-foot"><span>Inclusive mobility concept</span><span>↗</span></div></article>
+        <article class="achievement-card glass-panel reveal" data-category="other"><div class="achievement-top"><span class="award-icon award-blue">✳</span><span class="achievement-date">MAR 2025</span></div><div class="award-rank rank-special">RECOGNITION</div><h3>Outstanding Student Assistance Program</h3><p>East Java Provincial Government · Recognition of achievement and contribution</p><div class="achievement-foot"><span>Provincial recognition</span><span>↗</span></div></article>
+        <article class="achievement-card glass-panel reveal" data-category="research"><div class="achievement-top"><span class="award-icon award-blue">✧</span><span class="achievement-date">NOV 2025</span></div><div class="award-rank rank-special">TOP 10 RUNNER-UP</div><h3>Indonesia Financial Summit National Essay Competition</h3><p>Universitas Indonesia · Listed as Top 10 Runner-Up (No. 1)</p><div class="achievement-foot"><span>Financial summit essay</span><span>↗</span></div></article>
       </div>
-      <p class="edit-note">Catatan: nama kompetisi, penyelenggara, dan tautan sertifikat dapat ditambahkan agar setiap pencapaian lebih spesifik dan terverifikasi.</p>
+      <div class="achievement-extra glass-panel reveal"><div class="extra-icon">⌁</div><div><h3>Learning beyond the podium</h3><p>Additional credentials include BRIN research and innovation training for OPSI participants (2026), ASEAN Data Science Explorer (ASEAN Foundation, 2025), Microsoft Security, Compliance, and Identity Fundamentals (2024), and Data Science training (Dicoding Indonesia, 2024).</p></div><a class="text-link" href="https://id.linkedin.com/in/deka-messi-araya-a6554b2b0" target="_blank" rel="noopener noreferrer">View credentials <span>↗</span></a></div>
     </section>
 
-    <section class="connect glass" id="connect">
-      <div><p class="eyebrow">03 / LET'S CONNECT</p><h2>Punya ide menarik?<br><span>Let’s make it happen.</span></h2><p class="connect-description">Terbuka untuk belajar, berdiskusi, dan berkolaborasi dalam proyek teknologi, AI, riset, maupun kreativitas.</p></div>
-      <div class="connect-links"><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" class="social-link"><span class="social-icon">in</span><span><b>LinkedIn</b><small>Connect professionally</small></span><span class="arrow">↗</span></a><a href="https://instagram.com/dekamessiaraya" target="_blank" rel="noreferrer" class="social-link"><span class="social-icon instagram">◎</span><span><b>Instagram</b><small>@dekamessiaraya</small></span><span class="arrow">↗</span></a></div>
+    <section id="journey" class="section section-shell journey-section">
+      <div class="section-heading reveal"><div><div class="eyebrow"><span class="section-index">04</span> LEADERSHIP & LEARNING</div><h2>Building communities.<br><span class="muted-title">Growing with people.</span></h2></div><p class="section-intro">A few roles that shape how I learn, collaborate, and make space for other students to explore technology and research.</p></div>
+      <div class="journey-layout"><div class="timeline">
+        <article class="timeline-item reveal"><div class="timeline-marker"><span></span></div><div class="timeline-date">JUL 2026 — PRESENT</div><div class="timeline-card glass-panel"><div class="timeline-heading"><div><span class="role-type">LEADERSHIP</span><h3>President</h3><p class="timeline-org">SINTECH · Smada Information and Technology</p></div><span class="timeline-arrow">↗</span></div><p>Lead the organization’s direction across programming, AI, cybersecurity, civil engineering, UI/UX, robotics, research, and digital innovation. Focused on building learning opportunities, partnerships, workshops, and collaborative projects for students.</p><div class="timeline-tags"><span>Strategy</span><span>Community</span><span>Technology</span></div></div></article>
+        <article class="timeline-item reveal"><div class="timeline-marker"><span></span></div><div class="timeline-date">APR 2026 — PRESENT</div><div class="timeline-card glass-panel"><div class="timeline-heading"><div><span class="role-type">CO-FOUNDING</span><h3>Co-Founder & Director of Curriculum</h3><p class="timeline-org">Research Bridge Initiative</p></div><span class="timeline-arrow">↗</span></div><p>Help build a youth-led education initiative, lead research curriculum design, create learning materials, and develop pathways in methodology, scientific writing, critical thinking, and competition preparation.</p><div class="timeline-tags"><span>Curriculum</span><span>Mentorship</span><span>Research education</span></div></div></article>
+        <article class="timeline-item reveal"><div class="timeline-marker"><span></span></div><div class="timeline-date">2022 — 2025</div><div class="timeline-card glass-panel"><div class="timeline-heading"><div><span class="role-type">FOUNDATION</span><h3>Junior High School</h3><p class="timeline-org">SMP Negeri 1 Jombang</p></div><span class="timeline-arrow">↗</span></div><p>Graduated with a reported final score of 93.69, a Top 10 Academic Distinction, and recognition for non-academic achievement. Participated in more than 100 competitions across research, public speaking, sports, and arts.</p><div class="timeline-tags"><span>Academic distinction</span><span>School Research Club</span></div></div></article>
+        <article class="timeline-item reveal"><div class="timeline-marker"><span></span></div><div class="timeline-date">CURRENT EDUCATION</div><div class="timeline-card glass-panel"><div class="timeline-heading"><div><span class="role-type">STUDENT</span><h3>Senior High School</h3><p class="timeline-org">SMA Negeri 2 Jombang</p></div><span class="timeline-arrow">↗</span></div><p>Continuing to explore AI, scientific research, interdisciplinary innovation, and student-led initiatives while building skills through projects and competitions.</p><div class="timeline-tags"><span>AI & informatics</span><span>Scientific inquiry</span></div></div></article>
+      </div><aside class="journey-aside reveal"><div class="aside-glow"></div><div class="aside-eyebrow"><span class="tiny-pulse"></span> GUIDING PRINCIPLE</div><blockquote>“Technology should solve real-world problems — not exist merely as sophisticated systems.”</blockquote><div class="quote-rule"></div><p>A thought that keeps me grounded when exploring a new idea: who does it help, and how do we know?</p><div class="quote-signature"><span class="signature-mark">d.</span><span><strong>Deka Messi Araya</strong><small>Research · Technology · Impact</small></span></div></aside></div>
+    </section>
+
+    <section class="section section-shell skills-section">
+      <div class="section-heading reveal"><div><div class="eyebrow"><span class="section-index">05</span> CURRENT TOOLKIT</div><h2>What I’m <span class="gradient-text">exploring.</span></h2></div><p class="section-intro">A growing set of interests and capabilities. Always evolving through hands-on work and learning.</p></div>
+      <div class="toolkit-grid reveal"><div class="toolkit-card glass-panel"><div class="toolkit-icon">⌘</div><h3>AI & Computing</h3><div class="tool-tags"><span>Artificial Intelligence</span><span>Machine Learning</span><span>Computer Vision</span><span>Software Development</span></div></div><div class="toolkit-card glass-panel"><div class="toolkit-icon">∑</div><h3>Research & Writing</h3><div class="tool-tags"><span>Research Methodology</span><span>Scientific Writing</span><span>Critical Thinking</span><span>Data Science</span></div></div><div class="toolkit-card glass-panel"><div class="toolkit-icon">◈</div><h3>Building & Leading</h3><div class="tool-tags"><span>Curriculum Design</span><span>Community Building</span><span>Product Thinking</span><span>Team Collaboration</span></div></div></div>
+    </section>
+
+    <section id="contact" class="contact-section section-shell">
+      <div class="contact-card glass-panel reveal"><div class="contact-aurora"></div><div class="contact-content"><div class="eyebrow"><span class="status-dot"></span> OPEN TO THOUGHTFUL COLLABORATION</div><h2>Good ideas get better<br>when <span class="gradient-text">we build together.</span></h2><p>Have a research idea, a student initiative, or a technology project with a purpose? I’d be glad to connect, learn from your perspective, and explore what we could create.</p><div class="contact-actions"><a class="button button--primary" href="https://id.linkedin.com/in/deka-messi-araya-a6554b2b0" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span>↗</span></a><a class="button button--glass" href="#home">Back to top ↑</a></div></div><div class="contact-graphic" aria-hidden="true"><div class="contact-ring ring-a"></div><div class="contact-ring ring-b"></div><div class="contact-ring ring-c"></div><div class="contact-star">✳</div><div class="contact-coordinates">07°32′ S<br>112°14′ E</div></div></div>
     </section>
   </main>
-  <footer><a class="brand footer-brand" href="#home"><span class="brand-mark">d.</span><span>deka<span class="brand-dot">.</span></span></a><p>Designed with curiosity <span>✦</span> © <span id="year">2026</span> Deka Messi Araya</p><a href="#home" class="back-top">Back to top ↑</a></footer>
-  <script src="script.js"></script>
+
+  <footer class="site-footer section-shell"><a class="footer-brand" href="#home"><span class="brand-mark">d<span>.</span></span><span>Made with curiosity<br><small>and a little bit of glass.</small></span></a><div class="footer-mid">© <span id="year">2026</span> Deka Messi Araya <span class="footer-dot">·</span> Jombang, Indonesia</div><div class="footer-links"><a href="https://id.linkedin.com/in/deka-messi-araya-a6554b2b0" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://instagram.com/dekamessiaraya" target="_blank" rel="noopener noreferrer">Instagram ↗</a></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js" defer></script>
 </body>
 </html>
