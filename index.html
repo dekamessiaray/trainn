@@ -1,17 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Profil Saya - Deka</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Portofolio Deka — pelajar, technology enthusiast, dan aspiring builder.">
+  <title>Deka — Personal Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="profile">
-        <img src="profile.png" alt="Foto profil saya">
-        <h1>Deka</h1>
-        <p>Siswa SMA yang tertarik dengan teknologi dan desain. Selamat datang di website pertama saya!</p>
-        <a href="https://instagram.com/dekamessiaraya">Kunjungi Instagram Saya</a>
-        <button id="sapaButton">Sapa Saya!</button>
-    </div>
-    <script src="script.js"></script>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar glass">
+    <a class="brand" href="#home" aria-label="Deka home"><span class="brand-mark">d.</span><span>deka<span class="brand-dot">.</span></span></a>
+    <nav aria-label="Navigasi utama">
+      <a href="#about">Tentang</a><a href="#highlights">Prestasi</a><a href="#connect">Kontak</a>
+    </nav>
+    <a class="top-cta" href="#connect">Let's connect <span>↗</span></a>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="availability"><span class="pulse"></span> OPEN TO LEARN & COLLABORATE</div>
+        <p class="eyebrow">HALO, AKU DEKA 👋</p>
+        <h1>Membangun ide.<br><span>Menciptakan dampak.</span></h1>
+        <p class="hero-description">Siswa SMA yang tertarik pada teknologi, kecerdasan buatan, riset, dan desain. Aku suka mengubah rasa penasaran menjadi ide dan proyek nyata.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#highlights">Jelajahi profil <span>↓</span></a>
+          <a class="button button-ghost" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+        </div>
+        <div class="mini-proof"><div class="proof-icon">✦</div><p><strong>Curious by nature.</strong><br><span>Building, learning, improving — one step at a time.</span></p></div>
+      </div>
+      <div class="hero-visual">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="profile-card glass">
+          <div class="card-top"><span class="tiny-label">PERSONAL PROFILE</span><span class="more">•••</span></div>
+          <div class="avatar-wrap"><img src="profile.png" alt="Foto profil Deka" class="avatar"><span class="avatar-status"></span></div>
+          <h2>Deka Messi Araya</h2>
+          <p class="role">Student · Tech Enthusiast</p>
+          <div class="card-divider"></div>
+          <div class="interest-row"><span>⌘</span> Technology & AI</div>
+          <div class="interest-row"><span>✳</span> Research & Innovation</div>
+          <div class="interest-row"><span>◈</span> Design & Creativity</div>
+          <div class="card-footer"><span>INDONESIA</span><span class="sparkle">✦</span></div>
+        </div>
+        <div class="floating-chip chip-ai glass"><span class="chip-symbol">✳</span><div><b>AI & Innovation</b><small>Ideas into impact</small></div></div>
+        <div class="floating-chip chip-award glass"><span class="chip-symbol award-symbol">✦</span><div><b>Achievement</b><small>Keep moving forward</small></div></div>
+      </div>
+    </section>
+
+    <section class="stats glass" aria-label="Fokus utama">
+      <div><span class="stat-number">01</span><p>Curiosity</p><small>Selalu ingin tahu</small></div>
+      <div><span class="stat-number">02</span><p>Experiment</p><small>Berani mencoba</small></div>
+      <div><span class="stat-number">03</span><p>Impact</p><small>Belajar memberi dampak</small></div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading"><p class="eyebrow">01 / ABOUT ME</p><h2>Selalu ada hal baru<br>untuk <span>dibangun.</span></h2></div>
+      <div class="about-content"><p>Aku percaya ide bagus menjadi lebih berarti ketika diwujudkan. Saat ini aku mengeksplorasi pengembangan aplikasi, AI, riset, dan inovasi yang bisa membantu menyelesaikan masalah di sekitar kita.</p><p>Bagiku, proses belajar bukan sekadar mengumpulkan pengetahuan, tetapi juga berkolaborasi, bereksperimen, dan terus memperbaiki karya.</p>
+        <div class="skill-tags"><span>Artificial Intelligence</span><span>Web Development</span><span>Research</span><span>Product Thinking</span><span>Visual Design</span></div>
+      </div>
+    </section>
+
+    <section class="section achievements-section" id="highlights">
+      <div class="section-heading heading-row"><div><p class="eyebrow">02 / HIGHLIGHTS</p><h2>Progress worth<br><span>celebrating.</span></h2></div><p class="heading-note">Setiap pencapaian adalah pengingat untuk terus bertumbuh.</p></div>
+      <div class="achievement-grid">
+        <article class="achievement-card glass featured"><div class="achievement-top"><span class="achievement-icon">🏆</span><span class="achievement-label">ACHIEVEMENT</span></div><p class="achievement-kicker">Pencapaian kompetisi</p><h3>Juara 2</h3><p class="achievement-desc">Pengalaman meraih posisi juara dua — bukti bahwa proses, keberanian mencoba, dan konsistensi punya arti.</p><div class="achievement-bottom"><span>Competition · 2026</span><span>↗</span></div></article>
+        <article class="achievement-card glass"><div class="achievement-top"><span class="achievement-icon">✉</span><span class="achievement-label">WRITING</span></div><p class="achievement-kicker">International participation</p><h3>Writing & storytelling</h3><p class="achievement-desc">Mengembangkan ide dan menyampaikan cerita melalui tulisan yang personal dan bermakna.</p><div class="achievement-bottom"><span>Communication</span><span>↗</span></div></article>
+        <article class="achievement-card glass"><div class="achievement-top"><span class="achievement-icon">⌘</span><span class="achievement-label">BUILDING</span></div><p class="achievement-kicker">Personal project</p><h3>AI & technology</h3><p class="achievement-desc">Mengeksplorasi pengembangan solusi digital dan AI yang relevan dengan kebutuhan nyata.</p><div class="achievement-bottom"><span>Learning in public</span><span>↗</span></div></article>
+      </div>
+      <p class="edit-note">Catatan: nama kompetisi, penyelenggara, dan tautan sertifikat dapat ditambahkan agar setiap pencapaian lebih spesifik dan terverifikasi.</p>
+    </section>
+
+    <section class="connect glass" id="connect">
+      <div><p class="eyebrow">03 / LET'S CONNECT</p><h2>Punya ide menarik?<br><span>Let’s make it happen.</span></h2><p class="connect-description">Terbuka untuk belajar, berdiskusi, dan berkolaborasi dalam proyek teknologi, AI, riset, maupun kreativitas.</p></div>
+      <div class="connect-links"><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" class="social-link"><span class="social-icon">in</span><span><b>LinkedIn</b><small>Connect professionally</small></span><span class="arrow">↗</span></a><a href="https://instagram.com/dekamessiaraya" target="_blank" rel="noreferrer" class="social-link"><span class="social-icon instagram">◎</span><span><b>Instagram</b><small>@dekamessiaraya</small></span><span class="arrow">↗</span></a></div>
+    </section>
+  </main>
+  <footer><a class="brand footer-brand" href="#home"><span class="brand-mark">d.</span><span>deka<span class="brand-dot">.</span></span></a><p>Designed with curiosity <span>✦</span> © <span id="year">2026</span> Deka Messi Araya</p><a href="#home" class="back-top">Back to top ↑</a></footer>
+  <script src="script.js"></script>
 </body>
 </html>
