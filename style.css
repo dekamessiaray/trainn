@@ -32,3 +32,18 @@ html[data-theme="dark"]{--bg:#111729;--bg2:#171e32;--ink:#edf2ff;--ink-soft:#c6d
 @media(max-width:370px){.hero-title{font-size:42px}.hero-visual{min-height:420px}.profile-glass{width:84%}.portrait-frame{height:195px}.floating-chip small{font-size:7px}.floating-chip strong{font-size:8px}.chip-top{right:-6px}.chip-bottom{left:-5px}.achievement-grid{grid-template-columns:1fr}.achievement-card{min-height:unset}.achievement-foot{margin-top:10px}.footer-links{gap:8px}}
 @media(hover:none){.pointer-glow{display:none}.profile-glass:hover,.project-card:hover,.toolkit-card:hover,.value-card:hover{transform:none}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.js .reveal{opacity:1;transform:none}}
+
+
+/* Editorial activity gallery — restrained, image-led layout */
+.moment-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:18px;margin-top:30px}
+.moment{margin:0;overflow:hidden;border-radius:22px;position:relative;background:rgba(255,255,255,.42);border:1px solid rgba(255,255,255,.72);box-shadow:0 14px 36px rgba(43,61,103,.08);transition:transform .28s ease,box-shadow .28s ease}
+.moment:hover{transform:translateY(-4px);box-shadow:0 20px 42px rgba(43,61,103,.13)}
+.moment img{display:block;width:100%;height:230px;object-fit:cover}
+.moment-wide{grid-column:span 2}
+.moment-wide img{height:270px}
+.moment figcaption{padding:15px 17px 17px;display:flex;flex-direction:column;gap:5px}
+.moment figcaption strong{font-size:.95rem;line-height:1.35;font-weight:700;color:var(--ink)}
+.moment figcaption span{font-size:.82rem;color:var(--muted)}
+@media(max-width:760px){.moment-grid{grid-template-columns:1fr 1fr;gap:12px}.moment img,.moment-wide img{height:190px}.moment-wide{grid-column:span 2}.moment figcaption{padding:12px}.moment figcaption strong{font-size:.86rem}.moment figcaption span{font-size:.76rem}}
+@media(max-width:460px){.moment-grid{grid-template-columns:1fr}.moment-wide{grid-column:auto}.moment img,.moment-wide img{height:220px}}
+@media(prefers-reduced-motion:reduce){.moment{transition:none}.moment:hover{transform:none}}
