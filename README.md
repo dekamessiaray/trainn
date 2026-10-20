@@ -3,7 +3,7 @@
 Portofolio statis berbasis HTML, CSS, dan JavaScript. Dibuat dengan gaya glass yang minimal, fokus pada konten, pengalaman, dan proyek.
 
 ## Menjalankan
-Buka `index.html` langsung di browser atau gunakan Live Server di VS Code.
+Ekstrak SELURUH isi ZIP terlebih dahulu. Jangan memindahkan `index.html` sendirian karena foto memakai folder `assets/`. Buka `index.html` dari folder hasil ekstrak atau gunakan Live Server di VS Code.
 
 ## Struktur
 - `index.html` — struktur dan konten.
