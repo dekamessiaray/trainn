@@ -1,52 +1,62 @@
-body { 
-  background-color: #F9F6F0; /* Warm Cream: Latar belakang yang lembut dan menenangkan */ 
-  font-family: 'Segoe UI', Arial, sans-serif; /* Font modern yang lebih clean */ 
-  color: #2F3E46; /* Charcoal: Warna teks utama yang elegan, tidak terlalu hitam pekat */ 
+/* Reset dasar agar layout konsisten di semua browser */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body { 
+  background-color: #F9F6F0; /* Latar belakang Warm Cream yang estetik */ 
+  font-family: 'Segoe UI', Arial, sans-serif; 
+  color: #2F3E46; /* Teks utama Charcoal */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Membuat kartu otomatis berada di tengah layar secara vertikal */
 } 
 
+/* Struktur Utama Kartu Profil */
 .profile { 
   width: 320px; 
-  margin: 80px auto; 
-  padding: 35px 25px; /* Padding lebih lega khas desain premium */ 
+  padding: 35px 25px; 
   background-color: #FFFFFF; 
-  border-radius: 24px; /* Sudut lengkung yang lebih halus (soft rounded) */ 
+  border-radius: 24px; /* Sudut melengkung halus yang modern */ 
   
-  /* Efek bayangan ultra-soft, menyebar halus dan tidak kaku */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04), 0 1px 8px rgba(0, 0, 0, 0.02); 
+  /* Bayangan ultra-lembut (soft shadow) agar kartu terlihat melayang elegan */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03), 0 1px 8px rgba(0, 0, 0, 0.02); 
   
   text-align: center; 
-  transition: transform 0.3s ease; /* Animasi halus saat disentuh */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 } 
 
-/* Efek interaksi premium saat kartu dilewati kursor */
+/* Efek interaktif saat kursor diarahkan ke kartu */
 .profile:hover {
   transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
 }
 
+/* Pengaturan Foto di Dalam Kartu */
 .profile img { 
   width: 120px; 
-  height: 120px; /* Ditambahkan agar gambar tetap proporsional (lingkaran sempurna) */
-  object-fit: cover; /* Mencegah gambar menjadi gepeng */
-  border-radius: 50%; 
+  height: 120px; 
+  object-fit: cover; /* Menjaga foto agar tidak gepeng atau distorsi */
+  border-radius: 50%; /* Membuat gambar menjadi lingkaran sempurna */
   margin-bottom: 20px;
-  
-  /* Border tipis estetis untuk membingkai foto */
-  border: 4px solid #CAD2C5; /* Aksen warna Sage Green lembut */
+  border: 4px solid #CAD2C5; /* Bingkai tipis berwarna Sage Green lembut */
 }
 
-/* Rekomendasi tambahan untuk elemen teks di dalam kartu */
+/* Pengaturan Teks Nama (Judul Kartu) */
 .profile h2 {
-  font-size: 1.4rem;
+  font-size: 1.35rem;
   font-weight: 600;
-  margin: 10px 0 5px 0;
   color: #242729;
+  margin-bottom: 8px;
 }
 
+/* Pengaturan Teks Deskripsi/Sub-judul */
 .profile p {
   font-size: 0.95rem;
-  color: #84A98C; /* Teks deskripsi dengan warna hijau keabuan yang estetik */
-  margin: 0;
-  letter-spacing: 0.3px;
+  color: #84A98C; /* Hijau keabuan lembut yang estetik */
+  letter-spacing: 0.2px;
+  line-height: 1.4;
 }
